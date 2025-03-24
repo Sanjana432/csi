@@ -1,28 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Drawing Board</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <div id="drawing-board">
     <h1>Drawing Board</h1>
-    
+
     <div id="controls">
-      <label>Brush Color: <input type="color" id="brush-color" value="#000000"></label>
-      <label>Brush Size: <input type="range" id="brush-size" min="1" max="20" value="4"></label>
-      <label>Text: <input type="text" id="text-input" placeholder="Add text"></label>
+      <label for="brush-color">Brush Color: 
+        <input type="color" id="brush-color" value="#000000">
+      </label>
+      <label for="brush-size">Brush Size: 
+        <input type="range" id="brush-size" min="1" max="20" value="4">
+      </label>
+      <label for="text-input">Text: 
+        <input type="text" id="text-input" placeholder="Add text">
+      </label>
       <button id="clear-btn">Clear</button>
       <button id="save-btn">Save Drawing</button>
       <button id="recognize-btn">Recognize Drawing</button>
     </div>
-    
+
     <canvas id="drawing-canvas"></canvas>
     <div id="recognition-result"></div>
   </div>
 
   <script src="script.js"></script>
 </body>
+
 </html>
+
